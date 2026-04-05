@@ -775,3 +775,29 @@
   transform-origin: bottom;
   pointer-events: none;
 }
+/* ── SAMSUNG / ANDROID BROWSER FIX ── */
+.hero {
+  height: 100vh;
+  height: 100dvh;          /* dynamic viewport — fixes Samsung browser */
+}
+
+.hero-slide img {
+  -webkit-transform: scale(1.08);
+  transform: scale(1.08);
+}
+
+.hero-slide.active img {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.hero-overlay {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+/* Fix for Samsung Internet video issues */
+video {
+  -webkit-playsinline: true;
+  playsinline: true;
+}
