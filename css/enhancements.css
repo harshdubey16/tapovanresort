@@ -342,12 +342,12 @@
   position: relative;
   max-width: 860px;
   margin: 0 auto;
-  height: 320px;            /* fixed — page never shifts */
+  height: 420px;            /* fixed — page never shifts */
   overflow: hidden;
 }
 @media (max-width: 768px) {
   .reviews-track {
-    height: 480px;           /* more room for wrapped text on mobile */
+    height: 560px;           /* more room for wrapped text on mobile */
   }
 }
 .review-card {
