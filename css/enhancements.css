@@ -345,6 +345,11 @@
   height: 320px;            /* fixed — page never shifts */
   overflow: hidden;
 }
+@media (max-width: 768px) {
+  .reviews-track {
+    height: 480px;           /* more room for wrapped text on mobile */
+  }
+}
 .review-card {
   position: absolute;
   top: 0; left: 0; right: 0;
