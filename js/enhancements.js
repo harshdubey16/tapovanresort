@@ -5,7 +5,13 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
-  // ── FORCE SCROLL TO TOP ON LOAD ──
+  // ── ANDROID CHROME FIX ──
+  document.documentElement.style.setProperty('--vh', `${window.innerHeight * 0.01}px`);
+  window.addEventListener('resize', () => {
+    document.documentElement.style.setProperty('--vh', `${window.innerHeight * 0.01}px`);
+  });
+	
+	// ── FORCE SCROLL TO TOP ON LOAD ──
   history.scrollRestoration = 'manual';
   window.scrollTo({ top: 0, behavior: 'instant' });
 
