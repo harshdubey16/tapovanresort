@@ -2,23 +2,12 @@
    TAPOVAN RESORT — GLOBAL STYLES
    Edit colors in :root to retheme the site
    ============================================ */
-/* ── SAMSUNG BROWSER FIX ── */
-* {
-  -webkit-tap-highlight-color: transparent;
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap');
+
+/* ── ANDROID CHROME FIX ── */
+html {
   -webkit-text-size-adjust: 100%;
 }
-
-html {
-  scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
-}
-
-body {
-  -webkit-font-smoothing: antialiased;
-  overflow-x: hidden;
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap');
 
 :root {
   --gold: #C9A84C;
