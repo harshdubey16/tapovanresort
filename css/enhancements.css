@@ -822,20 +822,3 @@
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
 }
-
-/* Fix animations on Android Chrome */
-@-webkit-keyframes slideUp {
-  to { opacity: 1; -webkit-transform: translateY(0); transform: translateY(0); }
-}
-@keyframes slideUp {
-  to { opacity: 1; transform: translateY(0); }
-}
-
-@-webkit-keyframes heroFadeIn {
-  from { opacity: 0; -webkit-transform: translateY(30px); transform: translateY(30px); }
-  to { opacity: 1; -webkit-transform: translateY(0); transform: translateY(0); }
-}
-@keyframes heroFadeIn {
-  from { opacity: 0; transform: translateY(30px); }
-  to { opacity: 1; transform: translateY(0); }
-}
