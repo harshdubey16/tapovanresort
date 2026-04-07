@@ -1081,13 +1081,17 @@ footer {
   position: fixed;
   top: 0; left: 0; right: 0; bottom: 0;
   background: var(--dark);
-  z-index: 999;
+  z-index: 1100;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 2rem;
 }
 .mobile-menu.open { display: flex; }
+
+body.menu-open {
+  overflow: hidden;
+}
 .mobile-menu a {
   font-family: var(--font-display);
   font-size: 2rem;
@@ -1098,11 +1102,14 @@ footer {
 .mobile-menu a:hover { color: var(--gold); }
 .mobile-menu-close {
   position: absolute;
-  top: 2rem; right: 2rem;
+  top: 2rem;
+  right: 2rem;
+  z-index: 1101;
   color: var(--white);
   font-size: 1.5rem;
   cursor: pointer;
-  width: 45px; height: 45px;
+  width: 45px;
+  height: 45px;
   border: 1px solid rgba(255,255,255,0.2);
   display: flex;
   align-items: center;
