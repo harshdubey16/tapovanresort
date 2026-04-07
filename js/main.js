@@ -26,11 +26,22 @@ document.addEventListener('DOMContentLoaded', () => {
   const mobileMenu = document.querySelector('.mobile-menu');
   const mobileClose = document.querySelector('.mobile-menu-close');
 
-  hamburger?.addEventListener('click', () => mobileMenu?.classList.add('open'));
-  mobileClose?.addEventListener('click', () => mobileMenu?.classList.remove('open'));
-  mobileMenu?.querySelectorAll('a').forEach(a => {
-    a.addEventListener('click', () => mobileMenu?.classList.remove('open'));
+hamburger?.addEventListener('click', () => {
+  mobileMenu?.classList.add('open');
+  document.body.classList.add('menu-open');
+});
+
+mobileClose?.addEventListener('click', () => {
+  mobileMenu?.classList.remove('open');
+  document.body.classList.remove('menu-open');
+});
+
+mobileMenu?.querySelectorAll('a').forEach(a => {
+  a.addEventListener('click', () => {
+    mobileMenu?.classList.remove('open');
+    document.body.classList.remove('menu-open');
   });
+});
 
   // ── SCROLL REVEAL ──
   const reveals = document.querySelectorAll('.reveal');
