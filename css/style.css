@@ -193,23 +193,22 @@ h4 { font-size: 1.3rem; }
   font-size: 1.6rem;
   color: var(--white);
   letter-spacing: 0.05em;
-  line-height: 1.1;
+  line-height: 1.18;
 }
-
 .nav-logo-img {
   width: 46px;
   height: 46px;
   object-fit: contain;
   flex-shrink: 0;
 }
-
 .nav-logo-text {
   display: flex;
   flex-direction: column;
+  gap: 0.12rem;
 }
-
 .nav-logo span {
   display: block;
+  margin-top: 0.08rem;
   font-size: 0.65rem;
   font-family: var(--font-body);
   letter-spacing: 0.3em;
@@ -217,13 +216,11 @@ h4 { font-size: 1.3rem; }
   color: var(--gold);
   font-weight: 400;
 }
-
 .nav-links {
   display: flex;
   align-items: center;
   gap: 2.5rem;
 }
-
 .nav-links a {
   font-size: 0.78rem;
   font-weight: 500;
